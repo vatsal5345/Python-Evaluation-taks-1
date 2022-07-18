@@ -4,7 +4,8 @@ from base import Abstract_class
 class Fibonaaci_Series(Abstract_class):
     def run(self):
         """to find fibonacci number at position : initial values are 0 and 1 then 
-        add this process till given position.""" 
+        add this process till given position."""
+        num=int(input("enter number to find the fibonaaci term : "))
         p=1
         q=0
         if(num<0):
@@ -19,5 +20,4 @@ class Fibonaaci_Series(Abstract_class):
                 p = q
                 q = sum
             return q
-num=int(input("enter number to find the fibonaaci term : "))
-print(Fibonaaci_Series.run(num))
+# print(Fibonaaci_Series.run(num))

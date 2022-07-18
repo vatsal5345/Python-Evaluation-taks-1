@@ -1,3 +1,7 @@
+from problems.armstrong_number import Armstrong_Number
+from problems.prime_number import Prime_Number
+from problems.fibonaaci_series import Fibonaaci_Series
+
 print("Welcome!! ")
 print(" 1) fibonaaci series")
 print(" 2) prime number")
@@ -5,14 +9,11 @@ print(" 3) armstrong number")
 
 num = int(input("choose the problem : "))
 if num == 1:
-    from problems.fibonaaci_series import Fibonaaci_Series
-    Fibonaaci_Series()
+    print(Fibonaaci_Series.run(num))
 elif num == 2:
-    from problems.prime_number import Prime_Number
-    Prime_Number()
+    print(Prime_Number.run(num))
 elif num == 3:
-    from problems.armstrong_number import Armstrong_Number
-    Armstrong_Number()
+    print(Armstrong_Number.run(num))
 else:
     print("""invalid entry!!!!
 please enter valid number....""")
