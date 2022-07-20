@@ -1,8 +1,9 @@
-from base import Abstract_class
+from base import AbstractClass
 
-class Prime_Number(Abstract_class):
+
+class PrimeNumber(AbstractClass):
     def run(self):
-        """progam to fn the given number is prime or not"""
+        """program to fn the given number is prime or not"""
         num = int(input("enter the number to check whether it is prime or not..  "))
         if num > 1:
             for i in range(2, int((num/2)+1)):
@@ -11,10 +12,8 @@ class Prime_Number(Abstract_class):
                     break
             else:
                 print(num, "is a prime number")
-                    
-
         else:
-            print(num, "is not a prime number")
+            print(num, "invalid")
         return ''
     
 # print(Prime_Number.run(num))

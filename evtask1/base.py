@@ -1,6 +1,7 @@
-from abc import ABC , abstractmethod
+from abc import ABC, abstractmethod
 
-class Abstract_class(ABC):
+
+class AbstractClass(ABC):
     @abstractmethod
     def run(self):
         pass
